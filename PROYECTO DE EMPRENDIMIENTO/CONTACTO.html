@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Formulario de Contacto</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color:rgb(170, 30, 30);
+            color: #fff;
+            padding: 10px;
+        }
+        nav ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav li {
+            display: inline; /* Hace que los items del menú estén en una linea*/
+            margin-right:20px; /*Espacioentrelos items delmenú*/
+        }
+        nav a {
+            text-decoration: none;
+            color: #f0a910;
+            font-size: 16px;
+        }
+            nav a:hover {
+            text-decoration: underline;
+            -color: rgb(219, 219, 176);
+        }
+        </style>
+</head>
+<body text="red" bgcolor="orange">
+    <header>
+        <nav>
+            <ol>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="ACERCA DE.html">Acerca de</a></li>
+                <li><a href="SERVICIOS.html">Servicios</a></li>
+                <li><a href="PORTAFOLIO.html">Portafolio</a></li>
+                <li>Contacto</li>
+            </ol>
+        </nav>
+    </header>
+    <h2>Contacto - Macetas Personalizadas</h2>
+    <form action="procesar_formulario.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="telephone">Telefono:</label>
+        <input type="telephone" id="telephone" name="telephone" required><br><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <br>
+    <br>
+    ELARD WILFREDO HUARILLOCLLA QUISPE
+    <img src="IMGS/pokemon.PNG" height="50" width="50" >
+</body>
+</html>
